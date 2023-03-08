@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <Title class="title">Gabe</Title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="main-bg">
+    <input type="checkbox" id="close-menu" class="close-menu" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#">Gabe</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#começo">Home</a></li>
+                    <li><a href="#meio">Projetos</a></li>
+                    <li><a href="#grid-one">Trabalhos</a></li>
+                    <li><a href="#knowledge">Conhecimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section class="intro main-bg section" id="começo">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>Quem eu sou? O que eu faço?</h2>
+                <p>me chamo Gabriel, sou um adolescente no momento, prestes a fazer 18 anos, estou começando o meu
+                    projeto
+                    de construir o meu currículo em um site, transformar o site em meu currículo, para ser mais exato.
+                    pretendo voltar a estudar java para refazer os meus projetos perdidos.
+                </p>
+            </div>
+            <div class="intro-img">
+                <img src="assets/img/undraw_developer_activity_re_39tg.svg"
+                    alt="a man writing his code at his computer at home with a white background">
+            </div>
+        </div>
+    </section>
+
+    <section class="white-bg section" id="meio">
+        <div class="main-content middle-content">
+            <h2>PROJETOS</h2>
+            <ul>
+                <li><a href="">PROJETOS EM JAVA</a></li>
+                <li><a href="">PROJETOS EM JAVASCRIPT</a></li>
+                <li><a href="">PROJETOS EM JAVASCRIPT & HTML & CSS</a></li>
+                <li><a href="">PROJETOS EM HTML & CSS</a></li>
+            </ul>
+            <div class="middle-img">
+                <img src="assets/img/undraw_code_typing_re_p8b9.svg"
+                    alt="a man and a woman looking at a typing code logo">
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-one main-bg section" id="grid-one">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">meus ultimos trabalhos</h2>
+            <p class="grid-p-heading">aqui estão os meus últimos trabalhos.</p>
+            <div class="grid">
+                <article>
+                    <h3>XADREZ</h3>
+                    <p>este projeto foi feito com java, o xadrez é jogado pela tela do cmd, para comandar as peças, você
+                        digita a peça e a posição</p>
+                </article>
+                <article>
+                    <h3>ESTE SITE</h3>
+                    <p>este projeto foi feito com html & css, no momento, uso esse site como o meu currículo, para me
+                        apresentar para as empresas.</p>
+                </article>
+                <article>
+                    <h3>CALCULADORA</h3>
+                    <p>este projeto foi feito com java e javafx, é uma calculadora normal, com soma e subtração apenas
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="main-knowledge white-bg section" id="knowledge">
+        <div class="main-content intro-knowledge">
+            <div class="knowledge-h3">
+                <h3>conhecimentos</h3>
+                <p></p>
+            </div>
+            <div class="java">
+                <h3>java</h3>
+                <div class="teste">''</div>
+            </div>
+            <div class="javascript">
+                <h3>javascript</h3>
+                <div class="js-teste">''</div>
+            </div>
+            <div class="html">
+                <h3>html</h3>
+                <div class="html-teste">''</div>
+            </div>
+            <div class="css">
+                <h3>css</h3>
+                <div class="css-teste">'' </div>
+                <div class="knowledge-imagem">
+                    <div class="knowledge-img"><img src="assets/img/undraw_road_to_knowledge_m8s0.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="intro main-bg section" id="contato">
+        <div class="main-content intro-content">
+
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Me contate!</legend>
+                    <div class="form-group">
+                        <label for="Primeiro nome">Primeiro nome</label>
+                        <input type="text" name="first-name" id="firstname" placeholder="primeiro nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="first-name" id="sobrenome" placeholder="sobrenome">
+                    </div>
+                    <div class=" form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="E-mail" id="email" placeholder="e-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="sua mensagem"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit">Enviar mensagem</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer white-bg" id="footer">
+        <p><a href="">Feito com <span class="heart">♥</span> por Gabriel Leite </a></p>
+    </footer> 
+
+    <a href="" class="back-to-top">➤</a>
+</body>
+
+</html>
